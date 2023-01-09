@@ -23,7 +23,7 @@ class PageController extends Controller
 
     public function getMovieDetails($id){
         $movie=Movie::find($id);
-        if(is_null($id)||$id==11||$id<1) abort(404);
+        if(!($movie)) abort(404);
 
 
         return view('movie-details', compact('movie'));
