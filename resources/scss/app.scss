@@ -1,0 +1,43 @@
+@import '~bootstrap/scss/bootstrap';
+
+ul{
+    list-style:none;
+}
+
+header{
+    height:80px;
+    width:100vw;
+    display:flex;
+    position:fixed;
+    left:0;
+    top:0;
+    background-color:black;
+    color:white;
+
+    a{
+        color:white;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    background-color:#555;
+    height:100vh;
+    padding:100px 20px 30px;
+    color:white;
+}
+
+.dc-container .card{
+    height:180px;
+    color:black;
+    background-color:whitesmoke;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        cursor:pointer;
+        transform: scale(105%);
+    }
+}
