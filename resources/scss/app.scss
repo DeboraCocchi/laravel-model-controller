@@ -40,20 +40,25 @@ a{
 
 main{
     background-color:#555;
-    height:100vh;
     padding:100px 20px 30px;
     color:white;
+    height:100%;
 }
 
 .dc-container .card{
-    height:180px;
     color:black;
     background-color:whitesmoke;
     transition: all 0.2s ease-in-out;
-
+    height:100%;
     &:hover{
         cursor:pointer;
         transform: scale(105%);
+    }
+    img{
+        height:75%;
+    }
+    .card-body{
+        height:25%;
     }
 }
 
@@ -61,10 +66,17 @@ main{
     margin:0 auto;
     width:60%;
     text-align:center;
-    padding:50px;
+    padding:30px;
     .card {
+        max-height:90%;
+        padding:20px 0;
         color:black;
         background-color:whitesmoke;
-        font-size:150%;
+        font-size:120%;
+        img{
+            width: 250px;
+            margin:0 auto;
+            object-fit:cover;
+        }
     }
 }
