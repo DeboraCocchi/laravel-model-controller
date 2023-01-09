@@ -1,13 +1,13 @@
 @extends('layout.main')
 
 @section('content')
-    <h1>I tuoi film:</h1>
+    <h1 class="text-warning">I tuoi film:</h1>
     <div class="dc-container">
         <div class="container-fluid">
             <div class="row">
                 @foreach ($movies as $movie)
                 <div class="col-2 p-2">
-                    <a href="#">
+                    <a href="{{ route('movie-details', $movie->id)}}">
                         <div class="card">
                             <div class="card-body">
                               <h5 class="card-title">{{$movie->title}}</h5>

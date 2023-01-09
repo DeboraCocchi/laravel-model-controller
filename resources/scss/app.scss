@@ -13,10 +13,25 @@ header{
     top:0;
     background-color:black;
     color:white;
+    li{
+        transition: all 0.2s ease-in-out;
+        &:hover{
+        transform: scale(105%);
+        }
+        &.active a{
+            color:#ffc107;
+            text-decoration:underline;
+        }
+        a{
+            color:white;
+            &:hover{
+                color:lightgrey;
+                text-decoration: underline;
 
-    a{
-        color:white;
+            }
+        }
     }
+
 }
 
 a{
@@ -39,5 +54,17 @@ main{
     &:hover{
         cursor:pointer;
         transform: scale(105%);
+    }
+}
+
+.container-details{
+    margin:0 auto;
+    width:60%;
+    text-align:center;
+    padding:50px;
+    .card {
+        color:black;
+        background-color:whitesmoke;
+        font-size:150%;
     }
 }

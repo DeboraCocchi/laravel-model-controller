@@ -1,5 +1,6 @@
 @extends('layout.main')
 
 @section('content')
-    <h1>Home Page</h1>
+    <h1 class="text-warning">Home Page</h1>
+
 @endsection
